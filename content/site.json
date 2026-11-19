@@ -1,0 +1,225 @@
+{
+  "_readme": "EVERYTHING the owner may need to change lives in this one file. No code editing required. Anything marked CONFIRM is a placeholder/assumption waiting for the owner. Keep the JSON valid (use a JSON validator if unsure).",
+
+  "business": {
+    "name": "Aroma Multicuisine",
+    "shortName": "Aroma",
+    "locality": "Sakchi",
+    "city": "Jamshedpur",
+    "state": "Jharkhand",
+    "postalCode": "831001",
+    "country": "IN",
+    "category": "Multi-cuisine Indian family restaurant",
+    "tagline": "A Journey of Flavours",
+    "siteUrl": ""
+  },
+
+  "contact": {
+    "phoneDisplay": "+91 81024 96359",
+    "phoneTel": "+918102496359",
+    "whatsapp": "918102496359",
+    "email": "",
+    "_emailNote": "Public email shown on the site (optional). Where enquiry emails are DELIVERED is set in .env (OWNER_EMAIL)."
+  },
+
+  "location": {
+    "addressLines": ["3rd Floor, Basant Central", "Mills & Godown Area, beside Trends", "Hirasingh Bagan, Sakchi", "Jamshedpur, Jharkhand 831001"],
+    "addressOneLine": "3rd Floor, Basant Central, Mills & Godown Area, beside Trends, Hirasingh Bagan, Sakchi, Jamshedpur, Jharkhand 831001, India",
+    "landmark": "3rd Floor, Basant Central, beside the Trends showroom, Sakchi",
+    "mapQuery": "Aroma Multicuisine, 3rd Floor, Basant Central, Hirasingh Bagan, Sakchi, Jamshedpur 831001",
+    "latitude": null,
+    "longitude": null,
+    "_geoNote": "CONFIRM: paste the exact latitude/longitude from Google Maps (right-click the pin). Until then the 'geo' block is left out of the SEO data rather than guessed.",
+    "googlePlaceId": "",
+    "_placeIdNote": "CONFIRM: Google Place ID (needed for the live reviews widget + the direct 'Write a review' link).",
+    "parking": null,
+    "_parkingNote": "CONFIRM: parking details (e.g. 'Basement parking at Basant Central'). While null, the AI concierge sends parking questions to WhatsApp instead of guessing."
+  },
+
+  "hours": {
+    "timezone": "Asia/Kolkata",
+    "default": { "open": "11:00", "close": "23:00" },
+    "days": {
+      "mon": { "open": "11:00", "close": "23:00" },
+      "tue": { "open": "11:00", "close": "23:00" },
+      "wed": { "open": "11:00", "close": "23:00" },
+      "thu": { "open": "11:00", "close": "23:00" },
+      "fri": { "open": "11:00", "close": "23:00" },
+      "sat": { "open": "11:00", "close": "23:00" },
+      "sun": { "open": "11:00", "close": "23:00" }
+    },
+    "_note": "Set a day to null (e.g. \"mon\": null) to mark it closed. Times are 24-hour, Asia/Kolkata.",
+    "busyNote": { "en": "Weekends 8–10 PM are our busiest hours — please book ahead.", "hi": "सप्ताहांत में रात 8–10 बजे सबसे ज़्यादा भीड़ रहती है — कृपया पहले से बुक करें।" }
+  },
+
+  "rating": { "value": 4.6, "count": 1000, "countLabel": "1,000+", "source": "Google" },
+  "price": { "label": "approx. ₹500–₹800 for two", "schemaRange": "₹₹" },
+
+  "cuisinesList": ["North Indian", "Mughlai", "Chinese / Indo-Chinese", "Continental", "Biryani & Kebabs"],
+
+  "menuSections": [
+    { "id": "thali", "label": "Thali", "count": 4 },
+    { "id": "meals", "label": "Meals", "count": 10 },
+    { "id": "starters", "label": "Starters", "count": 36 },
+    { "id": "main", "label": "Main Course", "count": 38 },
+    { "id": "breads", "label": "Breads", "count": 11 },
+    { "id": "rice", "label": "Rice", "count": 5 },
+    { "id": "biryani", "label": "Biryani", "count": 10 },
+    { "id": "friedrice", "label": "Fried Rice", "count": 5 },
+    { "id": "noodles", "label": "Noodles", "count": 7 },
+    { "id": "snacks", "label": "Snacks", "count": 5 }
+  ],
+
+  "toggles": {
+    "buffet": false,
+    "social": false,
+    "showPrices": false,
+    "onlineOrdering": false,
+    "reviewsWidget": true,
+    "birthdayWall": false,
+    "giftVoucher": true,
+    "offersBanner": true,
+    "askAroma": true,
+    "qrTableMode": true,
+    "installPrompt": true,
+    "_note": "true = show, false = hide. 'buffet', 'social', 'showPrices', 'onlineOrdering' and 'birthdayWall' stay OFF until the owner confirms the details below / provides content."
+  },
+
+  "buffet": { "timings": "", "price": "", "days": "", "_note": "CONFIRM all three, then set toggles.buffet = true." },
+  "social": { "instagram": "", "facebook": "" },
+  "onlineOrdering": { "url": "", "label": "Order online" },
+
+  "also": [
+    { "name": "Zomato", "url": "" },
+    { "name": "Swiggy Dineout", "url": "" },
+    { "name": "Magicpin", "url": "" },
+    { "name": "District", "url": "" }
+  ],
+  "_alsoNote": "Paste each listing URL. A badge without a URL is shown as a plain label (no dead links).",
+
+  "offers": [],
+  "_offersNote": "Today's Special / offer banner. Example: [{\"id\":\"sunday\",\"text\":{\"en\":\"Sunday family special\",\"hi\":\"रविवार फैमिली स्पेशल\"},\"until\":\"2026-12-31\"}]. Empty = no banner. Never publish an offer that is not confirmed.",
+
+  "festive": {
+    "active": "none",
+    "_options": "none | diwali | durga-puja | christmas | new-year",
+    "themes": {
+      "diwali":     { "accent": "#F2B134", "accent2": "#D9531E", "banner": { "en": "Happy Diwali from Aroma — book your family table early.", "hi": "अरोमा की ओर से दीपावली की शुभकामनाएँ — अपनी फैमिली टेबल पहले से बुक करें।" } },
+      "durga-puja": { "accent": "#E24A4A", "accent2": "#E8A33D", "banner": { "en": "Shubho Pujo! Celebrate with a feast at Aroma.", "hi": "शुभो पूजो! अरोमा में दावत के साथ मनाइए।" } },
+      "christmas":  { "accent": "#D8453D", "accent2": "#7FA66B", "banner": { "en": "Merry Christmas — dine with us this season.", "hi": "मेरी क्रिसमस — इस मौसम में हमारे साथ भोजन कीजिए।" } },
+      "new-year":   { "accent": "#E8C45A", "accent2": "#B5562B", "banner": { "en": "Ring in the New Year at Aroma — reserve your table.", "hi": "नया साल अरोमा में मनाइए — अपनी टेबल रिज़र्व करें।" } }
+    }
+  },
+
+  "analytics": { "ga4": "", "metaPixel": "", "_note": "Paste a GA4 ID (G-XXXXXXX) and/or Meta Pixel ID to activate tracking. Blank = nothing loads." },
+
+  "signature": [
+    { "id": "dum-biryani", "name": "Dum Biryani", "hi": "दम बिरयानी", "icon": "handi", "diet": null, "spice": 2,
+      "desc": { "en": "Fragrant basmati and tender meat or vegetables, sealed and slow-cooked on dum.", "hi": "ख़ुशबूदार बासमती, दम पर धीमी आँच में पकी हुई।" } },
+    { "id": "bombay-biryani", "name": "Bombay Biryani", "hi": "बॉम्बे बिरयानी", "icon": "pepper", "diet": null, "spice": 3,
+      "desc": { "en": "The bolder, spicier city-style biryani — for guests who like heat.", "hi": "तीखी, मसालेदार शहरी अंदाज़ की बिरयानी।" } },
+    { "id": "lucknowi-biryani", "name": "Lucknowi Biryani", "hi": "लखनवी बिरयानी", "icon": "cardamom", "diet": null, "spice": 1,
+      "desc": { "en": "Delicately spiced, aromatic and rich in the Awadhi tradition.", "hi": "अवधी परंपरा की हल्की मसालेदार, ख़ुशबूदार बिरयानी।" } },
+    { "id": "chicken-malai-kebab", "name": "Chicken Malai Kebab", "hi": "चिकन मलाई कबाब", "icon": "kebab", "diet": "nonveg", "spice": 1,
+      "desc": { "en": "Creamy, mellow and melt-in-the-mouth — a guest favourite.", "hi": "मलाईदार, नर्म और मुँह में घुल जाने वाला।" } },
+    { "id": "crispy-chilli-baby-corn", "name": "Crispy Chilli Baby Corn", "hi": "क्रिस्पी चिली बेबी कॉर्न", "icon": "corn", "diet": "veg", "spice": 2,
+      "desc": { "en": "Golden, crunchy baby corn tossed in a punchy chilli glaze.", "hi": "कुरकुरे बेबी कॉर्न, चटपटे चिली ग्लेज़ में।" } },
+    { "id": "paneer-khurchan", "name": "Paneer Khurchan", "hi": "पनीर खुरचन", "icon": "paneer", "diet": "veg", "spice": 2,
+      "desc": { "en": "Scraped-style paneer cooked with peppers and robust masala.", "hi": "शिमला मिर्च और गाढ़े मसाले में बना खुरचन पनीर।" } },
+    { "id": "butter-naan", "name": "Butter Naan", "hi": "बटर नान", "icon": "naan", "diet": "veg", "spice": 1,
+      "desc": { "en": "Soft, blistered from the tandoor and brushed with butter.", "hi": "तंदूर से सिका, नरम और मक्खन से तर।" } },
+    { "id": "chicken-specialities", "name": "Chicken Specialities", "hi": "चिकन स्पेशल", "icon": "drumstick", "diet": "nonveg", "spice": 2,
+      "desc": { "en": "A whole range of chicken favourites that guests keep coming back for.", "hi": "चिकन की पूरी रेंज, जिसके लिए मेहमान बार-बार आते हैं।" } }
+  ],
+  "_signatureNote": "Dish names come from guest reviews. 'spice' (1–3) is the TYPICAL heat for that style of dish — CONFIRM with the kitchen. 'diet' is null for dishes that exist in both veg and non-veg versions or are unconfirmed (no marker shown). Add \"photo\": \"<image-id>\" to a dish once a real photo of that exact dish exists.",
+
+  "plates": [
+    { "photo": "kebab", "caption": { "en": "Kebab platter, straight from the grill", "hi": "ग्रिल से सीधे, कबाब प्लैटर" } },
+    { "photo": "crispy-starter", "caption": { "en": "Crisp starters, made to share", "hi": "बाँटकर खाने वाले क्रिस्पी स्टार्टर" } },
+    { "photo": "rice-gravy", "caption": { "en": "Rice and gravy for the whole table", "hi": "पूरी टेबल के लिए चावल और ग्रेवी" } }
+  ],
+
+  "cuisines": [
+    { "id": "north-indian", "name": "North Indian", "hi": "उत्तर भारतीय", "icon": "naan",
+      "line": { "en": "Rich gravies, tandoor breads and comfort in every bite.", "hi": "गाढ़ी ग्रेवी, तंदूरी रोटियाँ और घर जैसा स्वाद।" },
+      "picks": ["Paneer Khurchan", "Butter Naan", "Main Course ×38", "Breads ×11"] },
+    { "id": "mughlai", "name": "Mughlai", "hi": "मुग़लई", "icon": "cardamom",
+      "line": { "en": "Creamy, aromatic and slow-cooked in the royal tradition.", "hi": "मलाईदार, ख़ुशबूदार और शाही अंदाज़ में धीमी आँच पर पका।" },
+      "picks": ["Chicken Malai Kebab", "Lucknowi Biryani", "Chicken specialities"] },
+    { "id": "chinese", "name": "Chinese / Indo-Chinese", "hi": "चाइनीज़ / इंडो-चाइनीज़", "icon": "wok", "photo": "crispy-starter",
+      "line": { "en": "Wok-fired, tangy and crisp — Indian-style Chinese done well.", "hi": "वोक की आँच पर तैयार, चटपटा और कुरकुरा।" },
+      "picks": ["Crispy Chilli Baby Corn", "Fried Rice ×5", "Noodles ×7"] },
+    { "id": "continental", "name": "Continental", "hi": "कॉन्टिनेंटल", "icon": "cloche",
+      "line": { "en": "Sandwiches, paninis and burgers for the evening cravings.", "hi": "शाम की भूख के लिए सैंडविच, पैनिनी और बर्गर।" },
+      "picks": ["Sandwiches", "Paninis", "Burgers"] },
+    { "id": "biryani-kebabs", "name": "Biryani & Kebabs", "hi": "बिरयानी और कबाब", "icon": "handi", "photo": "kebab",
+      "line": { "en": "Dum, Bombay and Lucknowi biryani beside smoky kebabs.", "hi": "दम, बॉम्बे और लखनवी बिरयानी, साथ में स्मोकी कबाब।" },
+      "picks": ["Dum Biryani", "Bombay Biryani", "Lucknowi Biryani", "Chicken Malai Kebab"] }
+  ],
+
+  "reviewThemes": [
+    { "id": "ambience", "icon": "flame", "en": "Ambience & interiors", "hi": "माहौल और इंटीरियर" },
+    { "id": "family", "icon": "leaf", "en": "Family dining", "hi": "फैमिली डाइनिंग" },
+    { "id": "celebrations", "icon": "saffron", "en": "Birthdays & group celebrations", "hi": "जन्मदिन और ग्रुप सेलिब्रेशन" },
+    { "id": "variety", "icon": "pepper", "en": "Wide veg + non-veg variety", "hi": "शाकाहारी + मांसाहारी की भरपूर वैरायटी" },
+    { "id": "biryani", "icon": "handi", "en": "Biryani & kebabs", "hi": "बिरयानी और कबाब" },
+    { "id": "staff", "icon": "anise", "en": "Attentive staff", "hi": "ध्यान रखने वाला स्टाफ़" }
+  ],
+
+  "moods": [
+    { "id": "family", "icon": "leaf", "label": { "en": "Family dinner", "hi": "फैमिली डिनर" },
+      "headline": { "en": "A table everyone agrees on", "hi": "ऐसी टेबल जिस पर सब सहमत हों" },
+      "picks": [
+        { "name": "Paneer Khurchan", "diet": "veg", "role": { "en": "Gravy for the veg side", "hi": "वेज के लिए ग्रेवी" } },
+        { "name": "Chicken Malai Kebab", "diet": "nonveg", "role": { "en": "Mild starter the kids will share", "hi": "बच्चों के लिए हल्का स्टार्टर" } },
+        { "name": "Dum Biryani", "diet": null, "role": { "en": "One big dum for the table", "hi": "पूरी टेबल के लिए एक बड़ी दम बिरयानी" } },
+        { "name": "Butter Naan", "diet": "veg", "role": { "en": "Soft breads to scoop it all up", "hi": "सब कुछ समेटने के लिए नरम नान" } }
+      ],
+      "tip": { "en": "Weekends 8–10 PM are busy — book ahead for a family table.", "hi": "सप्ताहांत में रात 8–10 बजे भीड़ रहती है — फैमिली टेबल पहले से बुक करें।" } },
+    { "id": "date", "icon": "flame", "label": { "en": "Date night", "hi": "डेट नाइट" },
+      "headline": { "en": "Slow, shareable and a little indulgent", "hi": "धीमा, मिल-बाँटकर और थोड़ा लाजवाब" },
+      "picks": [
+        { "name": "Chicken Malai Kebab", "diet": "nonveg", "role": { "en": "To start, creamy and mellow", "hi": "शुरुआत के लिए, मलाईदार" } },
+        { "name": "Crispy Chilli Baby Corn", "diet": "veg", "role": { "en": "A crunchy, spicy share", "hi": "कुरकुरा, चटपटा शेयर" } },
+        { "name": "Lucknowi Biryani", "diet": null, "role": { "en": "Aromatic and gentle on the palate", "hi": "ख़ुशबूदार और हल्की" } },
+        { "name": "Aroma Special Shake", "diet": null, "role": { "en": "Something sweet to end on (from the Beverages page)", "hi": "मीठे अंत के लिए (बेवरेजेस पेज से)" } }
+      ],
+      "tip": { "en": "Ask for a quieter corner when you book.", "hi": "बुकिंग के समय शांत कोने की माँग कीजिए।" } },
+    { "id": "birthday", "icon": "saffron", "label": { "en": "Birthday", "hi": "जन्मदिन" },
+      "headline": { "en": "A spread that makes the table feel like a party", "hi": "ऐसा फैलाव कि टेबल पार्टी जैसी लगे" },
+      "picks": [
+        { "name": "Chicken Malai Kebab", "diet": "nonveg", "role": { "en": "Starter platter for the non-veg guests", "hi": "नॉन-वेज मेहमानों के लिए स्टार्टर" } },
+        { "name": "Crispy Chilli Baby Corn", "diet": "veg", "role": { "en": "Starter platter for the veg guests", "hi": "वेज मेहमानों के लिए स्टार्टर" } },
+        { "name": "Bombay Biryani", "diet": null, "role": { "en": "A centre-piece dum for the group", "hi": "ग्रुप के लिए मुख्य बिरयानी" } },
+        { "name": "Paneer Khurchan", "diet": "veg", "role": { "en": "Gravy with butter naan", "hi": "बटर नान के साथ ग्रेवी" } }
+      ],
+      "cta": "celebrate",
+      "tip": { "en": "Tell us the date and guest count — we will help you plan the table.", "hi": "तारीख़ और मेहमानों की संख्या बताइए — हम टेबल प्लान करने में मदद करेंगे।" } },
+    { "id": "lunch", "icon": "cloche", "label": { "en": "Quick lunch", "hi": "झटपट लंच" },
+      "headline": { "en": "In and out, properly fed", "hi": "जल्दी भी, भरपेट भी" },
+      "picks": [
+        { "name": "A Thali", "diet": null, "role": { "en": "Complete plate — there are 4 on the menu", "hi": "पूरी थाली — मेन्यू में 4 हैं" } },
+        { "name": "A Meal combo", "diet": null, "role": { "en": "Pick from the 10 Meals on the menu", "hi": "मेन्यू के 10 मील्स में से चुनिए" } },
+        { "name": "Butter Naan", "diet": "veg", "role": { "en": "Add a fresh bread if you like", "hi": "चाहें तो ताज़ा नान जोड़ लीजिए" } }
+      ],
+      "tip": { "en": "We open at 11:00 AM daily — an easy lunch stop from Sakchi's shops.", "hi": "हम रोज़ सुबह 11:00 बजे खुलते हैं — सकची की दुकानों से लंच के लिए आसान ठिकाना।" } },
+    { "id": "spice", "icon": "chilli", "label": { "en": "Spice lover", "hi": "तीखे के शौकीन" },
+      "headline": { "en": "Bring the heat", "hi": "चलो, तीखा हो जाए" },
+      "picks": [
+        { "name": "Bombay Biryani", "diet": null, "role": { "en": "Our boldest biryani", "hi": "हमारी सबसे तीखी बिरयानी" } },
+        { "name": "Crispy Chilli Baby Corn", "diet": "veg", "role": { "en": "Chilli-glazed crunch", "hi": "चिली ग्लेज़ वाला कुरकुरापन" } },
+        { "name": "Chicken Specialities", "diet": "nonveg", "role": { "en": "Ask your server for the hottest chicken dish", "hi": "सबसे तीखी चिकन डिश के लिए सर्वर से पूछिए" } },
+        { "name": "Peri Peri Fire Chicken Sandwich", "diet": "nonveg", "role": { "en": "Evening Snacks, 3:30–7:00 PM (as printed on the menu)", "hi": "ईवनिंग स्नैक्स, शाम 3:30–7:00 (मेन्यू के अनुसार)" } }
+      ],
+      "tip": { "en": "Tell your server how hot you like it — spice can be tuned.", "hi": "सर्वर को बताइए कि कितना तीखा चाहिए।" } },
+    { "id": "veg", "icon": "leaf", "label": { "en": "Pure veg", "hi": "शुद्ध शाकाहारी" },
+      "headline": { "en": "All-veg, nothing missing", "hi": "पूरा वेज, कोई कमी नहीं" },
+      "picks": [
+        { "name": "Paneer Khurchan", "diet": "veg", "role": { "en": "A rich paneer main", "hi": "भरपूर पनीर मेन" } },
+        { "name": "Crispy Chilli Baby Corn", "diet": "veg", "role": { "en": "A crunchy starter", "hi": "कुरकुरा स्टार्टर" } },
+        { "name": "Butter Naan", "diet": "veg", "role": { "en": "Soft tandoor bread", "hi": "नरम तंदूरी नान" } },
+        { "name": "Veg biryani", "diet": "veg", "role": { "en": "Ask your server for the veg biryani option", "hi": "वेज बिरयानी के लिए सर्वर से पूछिए" } }
+      ],
+      "tip": { "en": "We serve both veg and non-veg — tell us if you need a strictly veg table.", "hi": "हमारे यहाँ वेज और नॉन-वेज दोनों हैं — सख़्त वेज टेबल चाहिए तो बताइए।" } }
+  ]
+}

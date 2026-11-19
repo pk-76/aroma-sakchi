@@ -1,0 +1,14 @@
+# secrets & runtime data
+.env
+data/
+# build tooling deps
+tools/node_modules/
+node_modules/
+# raw original uploads (contain a close-up selfie + a watermarked stock image; kept local only)
+assest/
+# editor / OS
+.claude/
+.vscode/
+Thumbs.db
+.DS_Store
+*.tmp

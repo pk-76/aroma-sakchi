@@ -1,0 +1,17 @@
+{
+  "_readme": "MENU MANIFEST. To update the menu: replace/add image files in this folder, then edit this list (order = page order). 'categories' creates the side tabs on the book and the chips on mobile: 'page' is the 1-based page number where that section starts. No code changes needed. Recommended: portrait JPG, ~1500px wide, sharp text, one menu page per file.",
+  "title": "Aroma Multicuisine — Table Menu",
+  "coverPage": 1,
+  "pages": [
+    { "file": "menu-01.jpg", "title": "Cover",                      "alt": "The green and gold cover of the Aroma Multicuisine table menu" },
+    { "file": "menu-02.jpg", "title": "Breakfast @ 99",             "alt": "Menu page: Breakfast @ 99 — South Indian, Indian and English breakfast options" },
+    { "file": "menu-03.jpg", "title": "Evening Snacks — Sandwich, Panino, Burger", "alt": "Menu page: Evening Snacks — sandwiches, paninis and burgers" },
+    { "file": "menu-04.jpg", "title": "Evening Snacks — Maggi & Indian Chaat",      "alt": "Menu page: Evening Snacks — Maggi bowls, pakoras, cutlets, chaats and pav bhaji" },
+    { "file": "menu-05.jpg", "title": "Beverages — Shakes & Soups",  "alt": "Menu page: Beverages — milkshakes and frappes, plus soups" }
+  ],
+  "categories": [
+    { "id": "breakfast", "label": { "en": "Breakfast", "hi": "ब्रेकफ़ास्ट" }, "page": 2 },
+    { "id": "snacks", "label": { "en": "Evening Snacks", "hi": "ईवनिंग स्नैक्स" }, "page": 3 },
+    { "id": "beverages", "label": { "en": "Beverages & Soups", "hi": "बेवरेजेस और सूप" }, "page": 5 }
+  ]
+}

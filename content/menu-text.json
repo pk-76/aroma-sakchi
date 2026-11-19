@@ -1,0 +1,102 @@
+{
+  "_readme": "Text version of the image menu — used for Google (SEO), screen readers, the 'View text menu' toggle and the AI concierge. Transcribed from the menu photos and checked by eye. PRICES ARE DELIBERATELY NOT LISTED here: the photos are the source of truth and prices must be confirmed by the owner before they are published as text. Update this file when the menu pages change (tools/ocr-menu.mjs can produce a first draft).",
+  "sections": [
+    {
+      "id": "breakfast",
+      "title": "Breakfast @ 99 (any one)",
+      "note": "Printed on the menu: 7:30 AM to 11:30 AM. CONFIRM with the owner — the restaurant's published dining hours start at 11:00 AM.",
+      "groups": [
+        { "name": "South Indian", "items": [
+          { "n": "Sada Dosa", "d": "Plain, onion, butter, butter onion or rawa; crisp golden dosa served with chutney and sambar", "diet": "veg" },
+          { "n": "Masala Dosa", "d": "Plain, onion, butter, butter onion or rawa; spiced potato filling in a crispy dosa", "diet": "veg" },
+          { "n": "Uttapam", "d": "Onion or masala; soft fluffy pancake topped with onions or spiced veggies", "diet": "veg" },
+          { "n": "Idli + Vada Combo (3 pcs)", "d": "Steamed idlis and crispy vadas with chutney and sambar", "diet": "veg" },
+          { "n": "Upma", "d": "Light, fluffy semolina cooked with mild spices and herbs", "diet": "veg" }
+        ]},
+        { "name": "Indian", "items": [
+          { "n": "Chola Batura", "d": "Puffy fried bread with spicy chickpea curry", "diet": "veg" },
+          { "n": "Puri Aloo Dum + Sweet", "d": "Golden puris with tangy potato curry and a touch of dessert", "diet": "veg" }
+        ]},
+        { "name": "English", "items": [
+          { "n": "Bread with Masala Omelette & Fruit Juice", "d": "Spiced omelette on fresh bread with a refreshing juice", "diet": "nonveg" },
+          { "n": "French Toast with Maple Syrup", "d": "Soft golden toast drizzled with sweet maple syrup", "diet": null }
+        ]}
+      ]
+    },
+    {
+      "id": "snacks",
+      "title": "Evening Snacks",
+      "note": "Printed on the menu: 3:30 PM to 7:00 PM.",
+      "groups": [
+        { "name": "Sandwich", "items": [
+          { "n": "Cheesy Chilly Tomato Sandwich", "d": "Melty cheese, spicy chillies and tangy tomato", "diet": "veg" },
+          { "n": "Fresh Veg Paradise Sandwich", "d": "A garden-fresh medley of vegetables with light seasoning", "diet": "veg" },
+          { "n": "Spicy Tandoori Paneer Sandwich", "d": "Soft paneer cubes tossed in fiery tandoori spices", "diet": "veg" },
+          { "n": "Crunchy Roasted Chicken Sandwich", "d": "Tender chicken with crisp lettuce and tangy dressing", "diet": "nonveg" },
+          { "n": "Spicy Tandoori Chicken Sandwich", "d": "Tender chicken infused with smoky tandoori spice", "diet": "nonveg" },
+          { "n": "Peri Peri Fire Chicken Sandwich", "d": "Zesty peri-peri chicken that packs heat and flavour", "diet": "nonveg" }
+        ]},
+        { "name": "Panino", "items": [
+          { "n": "Pesto Fest Panino", "d": "Basil pesto, fresh veggies and cheese in a grilled Italian roll", "diet": "veg" },
+          { "n": "Paneer Pleasure Panino", "d": "Paneer with herbs and veggies for a comforting bite", "diet": "veg" },
+          { "n": "Countryside Roasted Chicken Panino", "d": "Juicy roasted chicken with rustic herbs in a hearty panino", "diet": "nonveg" },
+          { "n": "Special Open House Panino", "d": "A chef's creation of gourmet fillings, open-style", "diet": null }
+        ]},
+        { "name": "Burger", "items": [
+          { "n": "Classic Burger", "d": "A timeless burger with a juicy patty and fresh fixings", "diet": null },
+          { "n": "Cheesy Tex Mex Burger", "d": "A bold Tex-Mex burger topped with molten cheese", "diet": null },
+          { "n": "Grilled Chicken Cheese Melt Burger", "d": "Succulent grilled chicken under a blanket of melted cheese", "diet": "nonveg" },
+          { "n": "Spicy Paneer Heatwave Burger", "d": "Paneer with a punch of spice and a burst of flavour", "diet": "veg" }
+        ]},
+        { "name": "Maggi", "items": [
+          { "n": "Supreme Cheesy Chicken Maggi", "d": "Comforting Maggi with tender chicken chunks and loads of gooey cheese", "diet": "nonveg" },
+          { "n": "Peri Peri Paradise Chicken Cheese Maggi", "d": "Maggi with juicy chicken, fiery peri-peri spices and melted cheese", "diet": "nonveg" },
+          { "n": "Sizzling Schezwan Maggi", "d": "Spicy Schezwan sauce tossed with noodles and crunchy veggies for a zingy kick", "diet": "veg" },
+          { "n": "Eggstra Cheese Maggi Delight", "d": "Maggi tossed with fluffy eggs and gooey cheese", "diet": "nonveg" },
+          { "n": "Cheesy Veggie Maggi", "d": "A wholesome mix of vegetables, soft noodles and rich melted cheese", "diet": "veg" }
+        ]},
+        { "name": "Indian", "items": [
+          { "n": "Onion Pakora", "d": "Crisp golden fritters made with spiced gram flour and fresh onion rings", "diet": "veg" },
+          { "n": "Paneer Pakora", "d": "Cottage cheese cubes in a crunchy spiced batter, fried to perfection", "diet": "veg" },
+          { "n": "Veg. Cutlet", "d": "Crispy pan-fried patties with a savoury blend of mashed veggies and spices", "diet": "veg" },
+          { "n": "Paneer Cutlet", "d": "Soft paneer mixed with fresh herbs, coated and shallow-fried", "diet": "veg" },
+          { "n": "Ragda Patis", "d": "Soft potato patties topped with tangy ragda curry, chutneys and fresh garnish", "diet": "veg" },
+          { "n": "Dahi Papdi Chaat", "d": "Crispy papdi layered with spiced yogurt, chutneys and a dash of chaat masala", "diet": "veg" },
+          { "n": "Basket Chaat", "d": "Edible crispy basket filled with potatoes, chickpeas, curd and sev", "diet": "veg" },
+          { "n": "Dahi Wada", "d": "Soft lentil dumplings in cool yogurt, sprinkled with spices and sweet chutney", "diet": "veg" },
+          { "n": "Paw Bhaji", "d": "Butter-toasted pav served with spicy mashed vegetable curry and a dollop of butter", "diet": "veg" }
+        ]}
+      ]
+    },
+    {
+      "id": "beverages",
+      "title": "Beverages & Soups",
+      "note": "",
+      "groups": [
+        { "name": "Shakes", "items": [
+          { "n": "French Vanilla Shake", "d": "Smooth, creamy vanilla indulgence with a classic rich flavour", "diet": "veg" },
+          { "n": "Maddy Mango Frappe", "d": "Chilled mango frappe with a frosty, tropical punch", "diet": "veg" },
+          { "n": "Strawberry Splash Frappe", "d": "Icy strawberry frappe with a refreshing burst of sweetness", "diet": "veg" },
+          { "n": "Creamy Oreo Chocoshake", "d": "Chocolatey shake loaded with crunchy Oreo goodness", "diet": "veg" },
+          { "n": "Crunchy KitKat Chocoshake", "d": "Chocolatey shake studded with crunchy KitKat bites", "diet": "veg" },
+          { "n": "Aroma Special Shake", "d": "Signature milkshake blended with a surprise mix of exotic flavours", "diet": "veg" },
+          { "n": "Paradise Pineapple Frappe", "d": "Tropical pineapple frappe with a juicy, tangy taste", "diet": "veg" },
+          { "n": "Quencher Kiwi Frappe", "d": "Cool kiwi frappe with a crisp, zesty flavour", "diet": "veg" },
+          { "n": "Chocolate Milkshake", "d": "Thick and velvety chocolate blend for pure cocoa delight", "diet": "veg" },
+          { "n": "Strawberry Milkshake", "d": "Creamy shake with the warm, fruity burst of strawberries", "diet": "veg" },
+          { "n": "Biscoff Milkshake", "d": "Creamy shake with the warm, caramelised crunch of Biscoff cookies", "diet": "veg" },
+          { "n": "Mango Milkshake", "d": "Tropical, sun-kissed mango blended into a creamy milkshake", "diet": "veg" }
+        ]},
+        { "name": "Soups", "items": [
+          { "n": "Cream of Tomato", "d": "Rich tomato soup with a hint of cream, with bread croutons", "diet": "veg" },
+          { "n": "Cream of Spinach", "d": "Fresh spinach purée blended with cream", "diet": "veg" },
+          { "n": "Cream of Chicken", "d": "Tender chicken in a creamy, comforting broth", "diet": "nonveg" },
+          { "n": "Hot & Sour (Veg / Chicken)", "d": "A perfect balance of spicy, tangy and savoury flavours", "diet": null },
+          { "n": "Manchow (Veg / Chicken)", "d": "Spicy Indo-Chinese soup with vegetables and crispy noodles", "diet": null },
+          { "n": "Sweet Corn (Veg / Chicken)", "d": "Light and creamy soup with sweet corn kernels", "diet": null },
+          { "n": "Lemon Coriander (Veg / Chicken)", "d": "Refreshing clear soup infused with lemon and fresh coriander", "diet": null }
+        ]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offline — Aroma Multicuisine</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#14110F">
+<style>
+  :root{color-scheme:dark}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;background:#14110F;color:#F5EDE0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:grid;place-items:center;padding:24px;text-align:center}
+  main{max-width:640px;width:100%}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:2rem;margin:.6rem 0 .4rem}
+  p{color:rgba(245,237,224,.75);line-height:1.6;margin:.4rem 0 1.2rem}
+  .mark{width:72px;height:72px;color:#E8A33D}
+  a.btn{display:inline-block;background:#E8A33D;color:#14110F;font-weight:700;padding:.9rem 1.6rem;border-radius:999px;text-decoration:none;margin:.3rem}
+  .pages{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;margin-top:1.4rem}
+  .pages a{display:block;border-radius:10px;overflow:hidden;border:1px solid rgba(232,163,61,.3)}
+  .pages img{display:block;width:100%;height:auto}
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="50" cy="50" r="47"/><circle cx="50" cy="50" r="30"/><circle cx="50" cy="50" r="5"/></svg>
+  <h1>You're offline</h1>
+  <p>No signal right now — but our menu is saved on your phone. Browse it below, or call us to book a table.</p>
+  <a class="btn" href="tel:+918102496359">Call +91 81024 96359</a>
+  <div class="pages" id="pages" aria-label="Menu pages"></div>
+</main>
+<script>
+  fetch('assets/menu/menu.json').then(r => r.json()).then(m => {
+    const box = document.getElementById('pages');
+    (m.pages || []).forEach(p => { const a = document.createElement('a'); a.href = 'assets/menu/' + p.file; const i = new Image(); i.src = 'assets/menu/' + p.file; i.alt = p.alt || p.title || 'Menu page'; a.appendChild(i); box.appendChild(a); });
+  }).catch(() => {});
+</script>
+</body>
+</html>
