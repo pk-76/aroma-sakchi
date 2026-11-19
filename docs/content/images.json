@@ -1,0 +1,148 @@
+{
+  "_readme": "Catalogue of the REAL restaurant photos. 'source' is the file inside /assest (original uploads). Run `npm run images` in /tools to colour-grade + convert them into /assets/images. Edit alt text here. Set \"enabled\": false to hide a photo everywhere.",
+  "images": [
+    {
+      "id": "hall",
+      "source": "huge-area.webp",
+      "alt": "The main dining hall at Aroma Multicuisine, with a coffered wooden ceiling, a sunburst chandelier and guests seated at floral-upholstered chairs",
+      "groups": ["interiors"],
+      "focal": "50% 48%",
+      "upscale": 2
+    },
+    {
+      "id": "entrance",
+      "source": "aroma.webp",
+      "alt": "The glowing AROMA sign and green carpet at the entrance corridor of the restaurant on the 3rd floor of Basant Central",
+      "groups": ["interiors"],
+      "focal": "50% 40%",
+      "upscale": 2
+    },
+    {
+      "id": "greenwall",
+      "source": "self-area.webp",
+      "alt": "Illuminated Aroma Multicuisine signboard on a lush green foliage wall",
+      "groups": ["interiors"],
+      "focal": "50% 35%",
+      "upscale": 2
+    },
+    {
+      "id": "booths",
+      "source": "sitting area.webp",
+      "alt": "Rows of tan tufted-leather booth seating beside a wall of decorative plates",
+      "groups": ["interiors"],
+      "focal": "40% 50%",
+      "upscale": 2
+    },
+    {
+      "id": "counter",
+      "source": "sitting area1.webp",
+      "alt": "Warm-lit serving counter with steel dishes under a sculpted wooden ceiling and slatted wall panels",
+      "groups": ["interiors"],
+      "focal": "50% 55%",
+      "upscale": 2
+    },
+    {
+      "id": "balloons",
+      "source": "chair.webp",
+      "alt": "The dining hall decorated with blue, white and pink balloons for a birthday celebration",
+      "groups": ["interiors", "celebrations"],
+      "focal": "50% 50%",
+      "upscale": 2
+    },
+    {
+      "id": "cake-cutting",
+      "source": "gathring.webp",
+      "alt": "A group of guests in festive attire gathered around a table to cut a cake during a celebration",
+      "groups": ["celebrations"],
+      "focal": "50% 50%",
+      "upscale": 2,
+      "consent": "CONFIRM WITH OWNER: shows identifiable guests"
+    },
+    {
+      "id": "cake",
+      "source": "cake.webp",
+      "alt": "A slice of layered chocolate-cookie cream cake on a white plate",
+      "groups": ["food", "celebrations"],
+      "focal": "50% 50%",
+      "upscale": 2
+    },
+    {
+      "id": "kebab",
+      "source": "food.webp",
+      "alt": "A platter of stuffed kebabs topped with grated cheese and herbs, served with green mint chutney and onion rings",
+      "groups": ["food"],
+      "focal": "45% 40%",
+      "upscale": 2
+    },
+    {
+      "id": "rice-gravy",
+      "source": "cusine.webp",
+      "alt": "Vegetable fried rice, a fresh salad plate and a bowl of rich gravy laid out on a dining table",
+      "groups": ["food"],
+      "crop": { "bottomPct": 14 },
+      "focal": "35% 50%",
+      "upscale": 2
+    },
+    {
+      "id": "crispy-starter",
+      "source": "chowmin.webp",
+      "alt": "Crispy glazed starter garnished with golden fried strands, served on a white plate",
+      "groups": ["food"],
+      "focal": "45% 40%",
+      "upscale": 2
+    },
+    {
+      "id": "blue-drink",
+      "source": "coctail.webp",
+      "alt": "A bright blue iced drink with a lemon slice and a striped paper straw",
+      "groups": ["food"],
+      "focal": "50% 45%",
+      "upscale": 2
+    },
+    {
+      "id": "iced-drink",
+      "source": "drink.webp",
+      "alt": "A tall glass of iced dark beverage with a lemon wheel and a teal-striped straw",
+      "groups": ["food"],
+      "focal": "50% 55%",
+      "upscale": 2
+    },
+    {
+      "id": "sculpture-gold",
+      "source": "sculputure.webp",
+      "alt": "A gold sculpture of a resting face leaning on a hand, lit against warm wooden slats",
+      "groups": ["interiors"],
+      "focal": "50% 45%",
+      "upscale": 2
+    },
+    {
+      "id": "sculpture-leaf",
+      "source": "sclupture.webp",
+      "alt": "A black sculpture with gold-leaf hair standing in front of warm wooden slats",
+      "groups": ["interiors"],
+      "focal": "50% 45%",
+      "upscale": 2
+    },
+    {
+      "id": "bust",
+      "source": "monument.webp",
+      "alt": "A stone sculpture of two figures on a ledge beneath a slatted pendant lamp, against a wood-panelled wall",
+      "groups": ["interiors"],
+      "focal": "55% 60%",
+      "upscale": 2
+    },
+    {
+      "id": "menu-cover",
+      "source": "nameplate.webp",
+      "alt": "The green and gold cover of the Aroma Multicuisine table menu",
+      "groups": [],
+      "focal": "50% 45%",
+      "upscale": 2
+    },
+
+    { "id": "_excluded_fish", "source": "fish.webp", "enabled": false, "alt": "", "groups": [],
+      "_note": "Carries a 'GENERATED' watermark = AI/stock image, NOT a real Aroma dish. Never publish it as one." },
+    { "id": "_excluded_party", "source": "party.webp", "enabled": false, "alt": "", "groups": [],
+      "_note": "Close-up selfie of identifiable people. Hidden until the owner confirms consent." }
+  ]
+}

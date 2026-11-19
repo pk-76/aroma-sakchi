@@ -1,6 +1,8 @@
 /* AROMA core: config, helpers, i18n, theme, open-now status, counters, analytics, festive, PWA, section tracking */
 
 export const cfg = JSON.parse(document.getElementById('aroma-config').textContent);
+// QR table mode also works on static previews (no server-side query handling there)
+{ const q = new URLSearchParams(location.search); if (q.get('table')) cfg.table = q.get('table').replace(/[^0-9A-Za-z-]/g, ''); if (q.has('menu') || q.has('table')) cfg.view = 'menu'; }
 export const $ = (s, r = document) => r.querySelector(s);
 export const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 export const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;

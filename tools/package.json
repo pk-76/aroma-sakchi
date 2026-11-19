@@ -9,6 +9,7 @@
     "ocr": "node ocr-menu.mjs",
     "assets": "node build-assets.mjs",
     "logo": "node build-logo.mjs",
+    "export": "node export-static.mjs",
     "build": "node copy-vendor.mjs && node build-images.mjs && node build-logo.mjs && node build-assets.mjs"
   },
   "dependencies": {
